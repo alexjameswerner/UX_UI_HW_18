@@ -1,7 +1,12 @@
 
+
+
+
+
 inline-block {
     display: inline-block;
     vertical-align: top;
+    padding-bottom: 20px;
 }
 .logo {
     width: 23%;
@@ -9,29 +14,121 @@ inline-block {
     text-align: center;
 
 }
-header nav {
-    width: 73%;
-    padding: 1%;
+header img{
+    vertical-align: left;
 }
-header ul {
-    width: 50%;
-    margin-left: auto;
+header button{
+    position: right;
+    margin: auto;
+    padding: 10px;
+    background-color: #24236E;
+    color: #ffffff;
+    transition-duration: 0.4s;
+}
+header button:hover{
+    background-color: #6261df; 
+    color: white;
 }
 
-.heroimg{
-    height: 600px;
-    padding: 25px;
+
+header h1{
+    display: inline;
+    font-size: 48pt;
 }
+
+
+.heroimg{
+    display:flex;
+    flex-direction: row;
+    height: 600px;
+    width: 1000px;
+    padding: 25px;
+    margin-left:  auto;
+    margin-right: auto;
+    grid-template-rows: 75%;
+}
+
 .content{
     width: 500px;
     margin: 0 auto;
+
 }
+.heroimg p{
+    display: inline-block;
+    margin: 25px 10px;
+}
+.heroimg button{
+    margin: 25px 10px;
+    padding: 10px;
+    background-color: #24236E;
+    color: #ffffff;
+    transition-duration: 0.4s;
+}
+.heroimg button:hover{
+    background-color: #6261df; 
+    color: white;
+}
+
 footer{
     background-color: #958EEF;
    text-align: center;
 }
-footer ul{
-    display:inline-block;
-    vertical-align: top;
-  
+
+.flexContainer{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    padding: 1%;
+    background-color: #958EEF;
+    color: #FFFFFF;
+    
 }
+.workGrid{
+    display: flex;
+    flex-direction:column;
+    margin: 10px;
+    grid-template-rows: 300px 300px;
+
+}
+.workGrid img{
+
+}
+.workGrid h4{
+    
+}
+.workGrid button{
+    background-color: #24236E;
+    color: #ffffff;
+    transition-duration: 0.4s;
+}
+.workGrid button:hover{
+    background-color: #6261df; 
+    color: white;
+
+}
+
+.mySkills h1{
+    padding: 10px;
+    font-size: 48pt;
+}
+
+.myWork h1{
+    font-size: 48pt;
+}
+.myWork h4{
+    font-size: 32pt;
+}
+.myWork p{
+    font-size: 18pt;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .flexContainer{
+        flex-direction: column;
+        width:100%
+    }
+  }
