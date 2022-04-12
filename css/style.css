@@ -1,28 +1,29 @@
 
 
 
-
-
 inline-block {
     display: inline-block;
     vertical-align: top;
     padding-bottom: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    text-align: center;
 }
 .logo {
     width: 23%;
-    padding: 1%;
+    padding: 10%;
     text-align: center;
+    margin: 10px;
 
-}
-header img{
-    vertical-align: left;
 }
 header button{
     position: right;
-    margin: auto;
+    float: right;
+    margin: 10px;
     padding: 10px;
     background-color: #24236E;
     color: #ffffff;
+    border-radius: 4px;
     transition-duration: 0.4s;
 }
 header button:hover{
@@ -33,7 +34,9 @@ header button:hover{
 
 header h1{
     display: inline;
-    font-size: 48pt;
+    position: center;
+    font-size: 24pt;
+    margin-bottom: 10px;
 }
 
 
@@ -62,6 +65,7 @@ header h1{
     padding: 10px;
     background-color: #24236E;
     color: #ffffff;
+    border-radius: 4px;
     transition-duration: 0.4s;
 }
 .heroimg button:hover{
@@ -76,13 +80,28 @@ footer{
 
 .flexContainer{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 50%;
     margin: auto;
+    margin-bottom: 10px;
     padding: 1%;
     background-color: #958EEF;
     color: #FFFFFF;
     
+}
+.bs{
+    margin-right: 100px;
+}
+
+.project1{
+    margin-bottom: 200px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+.project2{
+    margin-bottom: 200px;
+    margin-left: 300px;
+    margin-right: 300px;
 }
 .workGrid{
     display: flex;
@@ -91,15 +110,10 @@ footer{
     grid-template-rows: 300px 300px;
 
 }
-.workGrid img{
-
-}
-.workGrid h4{
-    
-}
 .workGrid button{
     background-color: #24236E;
     color: #ffffff;
+    border-radius: 4px;
     transition-duration: 0.4s;
 }
 .workGrid button:hover{
